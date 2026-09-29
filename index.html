@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yogisha Rani · Portfolio</title>
+  <meta name="description" content="Yogisha Rani: Electronics & Computer Science engineer at KIIT. Builds KIITO (14k+ users) and Focus Fox, industrial ML at IOCL, BounceBlitz, RestoOps, a local AI agent, healthcare IoT and TinyML hardware.">
+  <meta name="theme-color" content="#0f1020">
+  <link rel="icon" href="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ff_icon.png">
+  <link rel="preconnect" href="https://ik.imagekit.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Pixelify+Sans:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo" aria-label="Back to top">
+      <canvas class="nav-face" width="12" height="12" data-sprite="face"></canvas>
+      <span>YOGISHA</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#about">Character</a></li>
+        <li><a href="#quests">Quest Log</a></li>
+        <li><a href="#adventures">Adventures</a></li>
+        <li><a href="#inventory">Inventory</a></li>
+        <li><a href="#trophies">Trophies</a></li>
+        <li><a href="#save">Save Point</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <canvas id="scene" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="eyebrow">~ press start ~</p>
+        <h1 class="title">Yogisha Rani</h1>
+        <p class="subtitle">Electronics &amp; Computer Science · KIIT, Bhubaneswar</p>
+
+        <div class="dialog" id="dialog" role="button" tabindex="0" aria-label="Dialogue box. Click or press Enter for the next line.">
+          <div class="dialog-portrait"><canvas width="12" height="12" data-sprite="face"></canvas></div>
+          <div class="dialog-body">
+            <span class="dialog-name">Yogisha</span>
+            <p class="dialog-text" id="dialogText" aria-live="polite"></p>
+          </div>
+          <span class="dialog-next" aria-hidden="true">▼</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#adventures"><span class="cursor">▶</span> See my work</a>
+          <a class="btn" href="https://drive.google.com/file/d/1wXWlwSEJjKpz5p-IoyhIjt4G_pKv9zJg/view?usp=drive_link" target="_blank" rel="noopener">Resume</a>
+          <a class="btn" href="https://github.com/LostRunes" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/yogisha-rani-1382a7381/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+
+        <ul class="hud">
+          <li><strong>14k+</strong><span>KIITO users</span></li>
+          <li><strong>2k</strong><span>Focus Fox users (almost!)</span></li>
+          <li><strong>97.66%</strong><span>top fault-diagnosis accuracy</span></li>
+          <li><strong>17%</strong><span>avg. C4 slippage cut</span></li>
+        </ul>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About">scroll ↓</a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <h2 class="section-title"><i data-icon="heart"></i> Character Sheet</h2>
+      <div class="about-grid">
+        <div class="panel portrait-card reveal">
+          <div class="portrait-frame">
+            <img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/yogisha.jpg" alt="Portrait of Yogisha Rani" width="600" height="600" loading="lazy">
+          </div>
+          <dl class="sheet">
+            <div><dt>Class</dt><dd>Full-stack &amp; ML builder</dd></div>
+            <div><dt>Guild</dt><dd>KIIT · B.Tech ECS</dd></div>
+            <div><dt>Joined</dt><dd>Aug 2024 – present</dd></div>
+            <div><dt>Home</dt><dd>Panipat, Haryana</dd></div>
+            <div><dt>Alias</dt><dd>@LostRunes</dd></div>
+          </dl>
+        </div>
+
+        <div class="panel about-text reveal">
+          <p class="lead">I'm a B.Tech student in Electronics &amp; Computer Science at KIIT. I build things end to end: Android and Flutter apps that thousands of students open every day, backends and data pipelines, ML models trained on refinery data, and TinyML models running on a microcontroller.</p>
+          <p>My two student apps, <b>KIITO</b> and <b>Focus Fox</b>, have grown to about 16,000 users between them, and <b>KIIT Transit</b> puts every campus bus and EV cart on a live map. At <b>Indian Oil (IOCL) Panipat</b> I worked in data analytics on large volumes of refinery process data and turned it into models the plant could use. I also built a <b>Smart Healthcare IoT</b> system with on-device ML and SOS alerts. This September I built three systems projects: <b>BounceBlitz</b>, an email verification engine that holds its own against NeverBounce and Reoon; <b>RestoOps</b>, an AI operations platform for restaurant catering; and <b>Bot Assistant</b>, a local AI agent that can safely use a browser, files and Gmail.</p>
+          <p>I like problems where the hard part is making something reliable, like a sensor that drifts, a mail server that won't answer, or an app that has to work offline in a hostel with bad Wi-Fi.</p>
+
+          <h3 class="mini-title">Coursework</h3>
+          <ul class="chips">
+            <li>Data Structures</li><li>Algorithms Analysis</li><li>Artificial Intelligence</li><li>Machine Learning</li>
+            <li>Database Management</li><li>Systems Programming</li><li>Computer Architecture</li><li>Internet of Things</li>
+            <li>Android Development</li><li>Web Development</li><li>Software Methodology</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section" id="quests">
+      <h2 class="section-title"><i data-icon="scroll"></i> Quest Log</h2>
+      <p class="section-sub">Where I've worked.</p>
+
+      <div class="timeline">
+        <article class="panel quest reveal">
+          <header class="quest-head">
+            <div>
+              <span class="tag tag-gold">Main quest · complete</span>
+              <h3>Indian Oil Corporation Limited (IOCL)</h3>
+              <p class="role">Intern · Data Analytics &amp; ML · Panipat Refinery, Haryana</p>
+            </div>
+            <span class="date">May – Jun 2026</span>
+          </header>
+          <ul class="bullets">
+            <li>Worked in <b>data analytics with big data</b>: cleaned, aligned and analysed large volumes of time-series sensor data from refinery units, and engineered the features the ML models ran on.</li>
+            <li>Built AI-driven refinery tools for <b>C4 slippage optimisation</b> and <b>industrial fault diagnosis</b> with Python, XGBoost, TensorFlow and Streamlit, reaching <b>97.66%</b> peak accuracy and <b>88%</b> on a leakage-safe validation set.</li>
+            <li>Developed a physics-aware <b>NiceGUI optimiser</b> for the debutanizer column: <b>0.91 R²</b> and a <b>17% average C4 reduction</b> in validation.</li>
+            <li>Built an <b>ASP.NET Core MVC intern portal</b> (C#, Entity Framework Core, SQLite, Bootstrap) for roster and attendance management.</li>
+          </ul>
+
+          <div class="subquests">
+            <div class="subquest">
+              <h4>Debutanizer C4 Optimiser</h4>
+              <p>Soft sensors predict butene and butadiene in the bottom product, then an advisory engine suggests reflux and reboiler-steam settings within the column's limits.</p>
+              <a href="https://github.com/LostRunes/debutanizer-model" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+            <div class="subquest">
+              <h4>AI Fault Diagnosis</h4>
+              <p>LSTM autoencoders and classifiers trained on the Tennessee Eastman Process dataset flag anomalies and identify 20 plant fault types, shown on a Streamlit operator screen.</p>
+              <a href="https://github.com/LostRunes/Industry_ML_model" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+            <div class="subquest">
+              <h4>Intern Registration Portal</h4>
+              <p>.NET 9 MVC app that links interns, mentors and daily attendance, with search, department filters and duplicate-entry guards.</p>
+              <a href="https://github.com/LostRunes/Intern-Registration-Portal" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <ul class="chips chips-tech">
+            <li>Python</li><li>Pandas</li><li>XGBoost</li><li>TensorFlow</li><li>Scikit-learn</li><li>Streamlit</li><li>NiceGUI</li><li>C# / .NET</li><li>EF Core</li><li>SQLite</li>
+          </ul>
+        </article>
+
+        <article class="panel quest reveal">
+          <header class="quest-head">
+            <div>
+              <span class="tag tag-teal">Main quest · complete</span>
+              <h3>Grape UAV</h3>
+              <p class="role">Web Developer Intern · Remote</p>
+            </div>
+            <span class="date">Dec 2025 – Feb 2026</span>
+          </header>
+          <ul class="bullets">
+            <li>Designed, built and deployed the official Grape UAV websites with <b>React.js, Tailwind CSS, Supabase and Firestore</b>.</li>
+            <li>Owned the full stack: responsive UI, real-time data integration, and ongoing optimisation of the company site.</li>
+          </ul>
+          <div class="shots-row">
+            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/grape1.jpg" alt="Grape UAV website hero section" loading="lazy" width="1200" height="619"></figure>
+            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/grape2.jpg" alt="Grape UAV website technology section" loading="lazy" width="1200" height="597"></figure>
+          </div>
+          <div class="quest-foot">
+            <ul class="chips chips-tech"><li>React.js</li><li>Tailwind CSS</li><li>Supabase</li><li>Firestore</li></ul>
+            <a class="link" href="https://grapeuav.com/" target="_blank" rel="noopener">grapeuav.com ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="adventures">
+      <h2 class="section-title"><i data-icon="chest"></i> Adventures</h2>
+      <p class="section-sub">Things I've built, from student apps to AI agents and hardware. Click a screenshot to enlarge it.</p>
+
+      <!-- KIITO -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-gold">Legendary · live</span>
+          <h3>KIITO</h3>
+          <p class="tagline">An all-in-one app for KIIT students: attendance, timetables, faculty and holidays, all in one place and usable offline.</p>
+          <div class="badges"><span class="badge"><b>14,000+</b> users across platforms</span><span class="badge">Android · iOS</span><span class="badge">Jan 2026</span></div>
+          <ul class="bullets">
+            <li>Built with <b>Clean Architecture + MVVM</b> using Kotlin, Jetpack Compose and Hilt.</li>
+            <li>Custom <b>Secure Direct-Link engine</b>: encrypted sessions directly with the university SAP portal, with no passwords stored and no data passing through a middle server.</li>
+            <li><b>Offline-first</b> with Room and Proto DataStore, plus Glance home-screen widgets and glassmorphism (Haze) effects.</li>
+            <li>WorkManager handles background sync; Supabase serves static academic data.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>Kotlin</li><li>Jetpack Compose</li><li>Hilt</li><li>Room</li><li>Proto DataStore</li><li>WorkManager</li><li>Glance</li><li>Supabase</li></ul>
+          <div class="links">
+            <a class="btn btn-small" href="https://play.google.com/store/apps/details?id=com.kito" target="_blank" rel="noopener">Google Play ↗</a>
+          </div>
+        </div>
+        <div class="phones">
+          <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kiito_dashboard.jpg" alt="KIITO dashboard screen" loading="lazy" width="453" height="905"></figure>
+          <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kiito_attendance.jpg" alt="KIITO attendance screen" loading="lazy" width="385" height="769"></figure>
+          <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kiito_faculty.jpg" alt="KIITO faculty directory screen" loading="lazy" width="382" height="763"></figure>
+        </div>
+      </article>
+
+      <!-- FOCUS FOX -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-rose">Epic · live</span>
+          <h3><img class="inline-icon" src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ff_icon.png" alt="" width="28" height="28"> Focus Fox</h3>
+          <p class="tagline">A collaborative study platform for GATE and DSA prep, with a Flutter mobile app and a lightweight Tauri + Rust desktop client.</p>
+          <div class="badges"><span class="badge"><b>~2,000</b> users</span><span class="badge">Android · iOS · Windows</span><span class="badge">Jul 2026</span></div>
+          <div class="split">
+            <div>
+              <h4 class="mini-title">Mobile · Flutter</h4>
+              <ul class="bullets">
+                <li>Real-time <b>study rooms on LiveKit</b>: low-latency voice and video over WebRTC, live presence and in-room chat, with rooms managed server-side on LiveKit Cloud.</li>
+                <li>A <b>dual-project Supabase</b> setup keeps study data separate from social and auth data, with real-time sync and serverless <b>Deno Edge Functions</b>.</li>
+                <li>Topic-wise PYQs, a peer doubts feed, Firebase push invites and <b>Hive</b>-based offline caching.</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mini-title">Desktop · Tauri + Rust</h4>
+              <ul class="bullets">
+                <li>Rust-powered client with native file-system integration and a small memory footprint.</li>
+                <li>Interactive <b>whiteboard</b> with custom CS data-structure tools.</li>
+                <li><b>LeetCode API</b> integration with company-wise and difficulty-sorted problem lists.</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="chips chips-tech"><li>Flutter</li><li>Riverpod</li><li>Tauri</li><li>Rust</li><li>Supabase</li><li>Deno Edge Functions</li><li>Firebase</li><li>LiveKit</li><li>WebRTC</li><li>Hive</li></ul>
+          <div class="links">
+            <a class="btn btn-small" href="https://play.google.com/store/apps/details?id=com.focusfox.app" target="_blank" rel="noopener">Google Play ↗</a>
+            <a class="btn btn-small" href="https://apps.microsoft.com/detail/9PPK11X0XQDN" target="_blank" rel="noopener">Microsoft Store ↗</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="shot shot-wide" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ffd_dashboard.jpg" alt="Focus Fox desktop subject dashboard" loading="lazy" width="1280" height="751"></figure>
+          <div class="gallery-row">
+            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ffd_whiteboard.jpg" alt="Focus Fox desktop whiteboard" loading="lazy" width="1280" height="800"></figure>
+            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ffd_leetcode.jpg" alt="Focus Fox company-wise LeetCode list" loading="lazy" width="1280" height="752"></figure>
+          </div>
+          <div class="phones phones-sm">
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ff_subjects.jpg" alt="Focus Fox mobile subjects screen" loading="lazy" width="538" height="1075"></figure>
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ff_channels.jpg" alt="Focus Fox mobile study rooms" loading="lazy" width="538" height="1075"></figure>
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ff_pyqs.jpg" alt="Focus Fox mobile PYQs" loading="lazy" width="538" height="1075"></figure>
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/ff_doubts.jpg" alt="Focus Fox mobile doubts feed" loading="lazy" width="538" height="1075"></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- KIIT TRANSIT -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-teal">Mobile · Sep 2026</span>
+          <h3>KIIT Transit</h3>
+          <p class="tagline">Live tracking for KIIT's campus buses and EV carts. Drivers' phones broadcast GPS, and students see every running vehicle on a campus map with ETAs, routes and schedules.</p>
+          <div class="badges"><span class="badge"><b>4 s</b> GPS broadcast interval</span><span class="badge"><b>11 / 11</b> tests · 0 analyzer issues</span><span class="badge">Student + driver apps</span></div>
+          <ul class="bullets">
+            <li><b>Student app:</b> a live campus map (flutter_map with MapTiler/OpenStreetMap tiles), animated markers with heading arrows, EV/bus filters, ETAs, upcoming stops inferred from the vehicle's heading, route lines with per-stop ETAs, and schedules marked on time, delayed or cancelled.</li>
+            <li><b>Driver app:</b> pick a vehicle, go on duty, and the phone broadcasts GPS every 4 seconds from an <b>Android foreground service</b> that keeps working with the screen off.</li>
+            <li><b>Crowd demand signals:</b> stranded students tap where they're waiting. A Supabase RPC merges requests per location over 30 minutes, counts each student once and applies a 5-minute cooldown, so drivers see how many people are actually waiting.</li>
+            <li><b>Security in the database, not just the app:</b> Row-Level Security policies mean a driver can claim only a vehicle nobody else is driving and update only their own, and a server-side trigger rejects any email outside <code>@kiit.ac.in</code>.</li>
+            <li><b>MVVM with repositories</b> over a swappable data source (Supabase or a built-in simulator), so the whole app also runs as a realistic demo with no backend.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>Flutter</li><li>Supabase Realtime</li><li>PostgreSQL + RLS</li><li>flutter_map</li><li>Geolocator</li><li>Provider</li><li>GoRouter</li><li>MVVM</li></ul>
+        </div>
+        <div class="gallery">
+          <div class="phones">
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kt_map.jpg" alt="KIIT Transit live map showing buses and EV carts on campus routes" loading="lazy" width="412" height="892"></figure>
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kt_request.jpg" alt="KIIT Transit ride request screen with campus pickup locations" loading="lazy" width="412" height="892"></figure>
+          </div>
+          <div class="design-row" aria-label="Figma design">
+            <h4 class="mini-title">Figma design</h4>
+            <div class="phones phones-sm">
+              <figure class="shot phone name-blur"><img src="img/kt_design_home.png" alt="KIIT Transit Figma design: home with nearest vehicle ETA" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+              <figure class="shot phone" data-lightbox><img src="img/kt_design_map.png" alt="KIIT Transit Figma design: live map with vehicle ETAs" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+              <figure class="shot phone" data-lightbox><img src="img/kt_design_driver.png" alt="KIIT Transit Figma design: driver app with shift status and assigned route" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+            </div>
+          </div>
+          <figure class="arch" aria-label="KIIT Transit architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier"><div class="node"><b>Driver app</b><span>Geolocator · foreground service</span></div></div>
+            <div class="arch-link">GPS every 4 s · demand signals</div>
+            <div class="arch-tier"><div class="node hl"><b>Supabase</b><span>Postgres + RLS · Realtime · demand RPC · domain trigger</span></div></div>
+            <div class="arch-link">realtime vehicles, requests, schedules</div>
+            <div class="arch-tier"><div class="node"><b>Student app</b><span>Views → ViewModels → Repositories</span></div><div class="node"><b>TransitSource</b><span>Supabase or simulator</span></div></div>
+          </figure>
+        </div>
+      </article>
+
+      <!-- BOUNCEBLITZ -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-lav">Systems · Sep 2026</span>
+          <h3>BounceBlitz</h3>
+          <p class="tagline">A standalone email verification engine and desktop app that does what NeverBounce and Reoon do, with no SaaS APIs and no per-email bill.</p>
+          <div class="badges"><span class="badge"><b>50</b> parallel workers</span><span class="badge"><b>~150–300 ms</b> per M365 check</span><span class="badge">Portable Windows .exe</span></div>
+          <ul class="bullets">
+            <li>A <b>PySide6</b> desktop window wraps an embedded <b>Flask microservice</b> on a dynamic local port, so the whole tool ships as one portable .exe that verifies thousands of emails per minute.</li>
+            <li>Multithreaded engine (<code>ThreadPoolExecutor</code>) with <b>dynamic MX resolution</b>, <b>backup-MX failover</b> and SMTP <code>RCPT TO</code> probing, streaming CSVs in and results out with live progress.</li>
+            <li><b>Provider-aware heuristics</b> avoid the Directory Harvest Attack blocks that enterprise gateways (Proofpoint, Mimecast) put up. Conservative phrase matching means a security-block <code>550</code> is never reported as a dead mailbox.</li>
+            <li>For Microsoft 365 domains, I found and integrated Microsoft's unauthenticated <b>GetCredentialType</b> endpoint. It answers over HTTPS, so there are no port-25 blocks or IP-reputation limits, and it costs nothing.</li>
+            <li>Detects headerless CSVs, and scores every address 0–100 using Reoon-style categories: <i>valid · catch-all · unknown · invalid</i>.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>Python</li><li>PySide6</li><li>Flask</li><li>dnspython</li><li>SMTP</li><li>ThreadPoolExecutor</li><li>PyInstaller</li></ul>
+          <div class="links">
+            <a class="btn btn-small" href="https://github.com/LostRunes/bounce-blitz.exe" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="shot shot-wide" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/bounceblitz.jpg" alt="BounceBlitz desktop app: drop a CSV list to verify" loading="lazy" width="1245" height="712"></figure>
+          <figure class="arch" aria-label="BounceBlitz architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier"><div class="node"><b>PySide6 desktop shell</b><span>frameless QWebEngineView</span></div></div>
+            <div class="arch-link">HTTP · dynamic localhost port</div>
+            <div class="arch-tier"><div class="node"><b>Embedded Flask app</b><span>job manager · CSV streaming · live progress</span></div></div>
+            <div class="arch-link">ThreadPoolExecutor · up to 50 workers</div>
+            <div class="arch-tier"><div class="node hl"><b>Provider detection</b><span>syntax · DNS MX lookup</span></div></div>
+            <div class="arch-link">branches by mail provider</div>
+            <div class="arch-tier">
+              <div class="node"><b>Microsoft 365</b><span>GetCredentialType over HTTPS</span></div>
+              <div class="node"><b>Everyone else</b><span>MX + backup MX → SMTP RCPT TO → DHA heuristics</span></div>
+            </div>
+            <div class="arch-link">response codes + phrases</div>
+            <div class="arch-tier"><div class="node"><b>Classifier</b><span>valid 100 · catch-all 50 · unknown 15 · invalid 0</span></div></div>
+          </figure>
+        </div>
+
+        <div class="project-extra">
+          <h4 class="mini-title">How well it works: a 1,000-email benchmark against two paid tools</h4>
+          <div class="kpis">
+            <div class="kpi"><strong>76.6%</strong><span>agreement with Reoon Bulk, the same as NeverBounce gets (76.4%)</span></div>
+            <div class="kpi"><strong>80.0%</strong><span>agreement with the NeverBounce API, more than Reoon manages</span></div>
+            <div class="kpi"><strong>302 / 302</strong><span>mailboxes confirmed through Microsoft were also marked safe by Reoon</span></div>
+            <div class="kpi"><strong>166</strong><span>unknowns, the fewest of the three (Reoon 200, NeverBounce 279)</span></div>
+          </div>
+          <div class="bench-wrap">
+            <table class="bench">
+              <caption>Results on the same 1,000 emails. "Usable" counts safe, role, catch-all and inbox-full as keep.</caption>
+              <thead><tr><th scope="col">Tool</th><th scope="col">Usable (keep)</th><th scope="col">Unknown · lower is better</th><th scope="col">Invalid</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Reoon Bulk <small>paid</small></th><td><span class="bar" style="--v:100"></span>777</td><td><span class="bar" style="--v:71.7"></span>200</td><td><span class="bar" style="--v:22.9"></span>19</td></tr>
+                <tr><th scope="row">NeverBounce API <small>paid</small></th><td><span class="bar" style="--v:91.5"></span>711</td><td><span class="bar" style="--v:100"></span>279</td><td><span class="bar" style="--v:12"></span>10</td></tr>
+                <tr class="mine"><th scope="row">BounceBlitz <small>mine · free</small></th><td><span class="bar" style="--v:96.4"></span>749</td><td><span class="bar" style="--v:59.5"></span>166</td><td><span class="bar" style="--v:100"></span>83</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note"><b>Next patch:</b> 78 of the 83 invalids come from Microsoft's "user not found" answer on business domains, which can miss aliases and shared mailboxes. Re-checking those over SMTP instead of marking them invalid should bring the invalid count close to the paid tools and push agreement with Reoon above 80%.</p>
+        </div>
+      </article>
+
+      <!-- RESTOOPS -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-lav">Full-stack AI · Sep 2026</span>
+          <h3>RestoOps</h3>
+          <p class="tagline">A local-first B2B sales and catering operations platform for restaurants, with an AI agent that runs the pipeline from first lead to confirmed order.</p>
+          <div class="badges"><span class="badge"><b>203 / 203</b> backend tests passing</span><span class="badge">Multi-tenant RBAC</span><span class="badge">Desktop app</span></div>
+          <ul class="bullets">
+            <li>The whole lead pipeline in one place: import → <b>verify emails</b> with the built-in BounceBlitz engine → score → <b>automated outreach sequences</b> → reply parsing into conversations → proposals and quotes → orders.</li>
+            <li><b>High-throughput async API</b> on FastAPI with async SQLAlchemy / AsyncPG over PostgreSQL, Alembic migrations, Celery + Redis workers for long-running jobs, and Prometheus metrics feeding Grafana.</li>
+            <li>An <b>autonomous agent on local LLMs</b> (Ollama) parses intent and calls tools to send emails, update leads, schedule follow-ups and create quotes. Important actions wait for a person to approve them: <i>AI suggests, a human decides, the system executes</i>. Every step lands in an audit log.</li>
+            <li><b>AI voice outreach</b> through Bland AI and Twilio webhooks, plus browser-to-browser WebRTC calls.</li>
+            <li>A Next.js dashboard inside a <b>Rust-powered Tauri shell</b> that starts and manages the Docker services itself, so the platform runs as a normal desktop app.</li>
+            <li>I ran a full audit (five parallel reviews) and fixed cross-tenant quote-number collisions and an approval flow that never actually executed. After that: 203/203 tests, and clean <code>tsc</code>, <code>next build</code> and <code>cargo check</code>.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>FastAPI</li><li>AsyncPG</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li><li>Next.js</li><li>TypeScript</li><li>Tauri + Rust</li><li>Ollama</li><li>Twilio</li><li>Docker</li><li>Prometheus</li></ul>
+          <div class="links">
+            <a class="btn btn-small" href="https://github.com/LostRunes/RestoOps" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="shot shot-wide" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/restoops.jpg" alt="RestoOps dashboard with lead pipeline and email verification breakdown" loading="lazy" width="1279" height="745"></figure>
+          <figure class="arch" aria-label="RestoOps architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier"><div class="node"><b>Tauri desktop shell</b><span>Rust · manages Docker services</span></div><div class="node"><b>Next.js dashboard</b><span>React · TanStack Query</span></div></div>
+            <div class="arch-link">REST + WebSockets</div>
+            <div class="arch-tier"><div class="node hl"><b>FastAPI</b><span>JWT auth · RBAC · webhooks · audit log</span></div></div>
+            <div class="arch-link">async I/O</div>
+            <div class="arch-tier"><div class="node"><b>PostgreSQL</b><span>AsyncPG · Alembic</span></div><div class="node"><b>Redis</b><span>cache · task queue</span></div></div>
+            <div class="arch-link">background jobs</div>
+            <div class="arch-tier">
+              <div class="node"><b>Celery workers</b><span>verification · sequences · follow-ups</span></div>
+              <div class="node"><b>Ollama agent</b><span>intent → tool call → approval queue</span></div>
+              <div class="node"><b>Comms</b><span>Twilio · Bland AI · SMTP</span></div>
+            </div>
+            <div class="arch-link">observability</div>
+            <div class="arch-tier"><div class="node"><b>Prometheus + Grafana</b><span>API and job metrics</span></div></div>
+          </figure>
+        </div>
+
+        <div class="project-extra">
+          <div class="kpis">
+            <div class="kpi"><strong>203 / 203</strong><span>backend tests passing after the full audit</span></div>
+            <div class="kpi"><strong>94%</strong><span>of 300 emails got the same verdict from the built-in engine as from standalone BounceBlitz (282 / 300)</span></div>
+            <div class="kpi"><strong>11</strong><span>modules: leads, campaigns, conversations, calls, quotes, orders, AI activity, jobs, notifications, users, settings</span></div>
+            <div class="kpi"><strong>0</strong><span>cloud AI dependencies: the agent runs on a local model</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- BOT ASSISTANT -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-rose">AI agent · Sep 2026</span>
+          <h3>Bot Assistant</h3>
+          <p class="tagline">A local-first AI agent desktop app. A model running on your own machine can browse the web, work with files, run commands and handle Gmail, all inside guardrails.</p>
+          <div class="badges"><span class="badge"><b>20+</b> structured tools</span><span class="badge"><b>26</b> unit tests + live tests</span><span class="badge">Local model via Ollama</span></div>
+          <ul class="bullets">
+            <li>A <b>custom agent loop in Rust</b>: plan → pick a tool → execute → observe → re-plan. Stopping a run cancels any model or tool call still in flight.</li>
+            <li><b>Model-agnostic</b> through a <code>ModelProvider</code> trait with an Ollama backend, with separate chat and tool models you can pick in the UI.</li>
+            <li>The model never gets raw control. It calls <b>structured tools</b> for the filesystem, terminal, browser and Gmail. The browser is a <b>Playwright worker</b> in Node with a persistent profile, one per app, restarting itself if it crashes.</li>
+            <li><b>Safety first:</b> risk tiers are deny-by-default (unknown tools count as high-risk, and deleting files or trashing mail needs approval in the UI). The workspace sandbox blocks <code>../</code> path escapes, the terminal allowlist rejects chained shell operators, and web and email content is wrapped as untrusted to resist prompt injection.</li>
+            <li><b>Gmail over OAuth 2.0</b> with PKCE and state checks. Tokens are kept in the OS credential store, and headers are sanitised against CRLF injection.</li>
+            <li>Chat and tool history are saved in SQLite. Next up: agent profiles, memory, scheduling, vision/computer use and multi-agent orchestration.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>Rust</li><li>Tauri 2</li><li>React</li><li>TypeScript</li><li>Ollama</li><li>Playwright</li><li>Gmail API</li><li>OAuth 2.0</li><li>SQLite</li></ul>
+        </div>
+        <div class="gallery">
+          <figure class="arch" aria-label="Bot Assistant architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier"><div class="node"><b>React UI</b><span>chat · approvals · logs · connected accounts</span></div></div>
+            <div class="arch-link">Tauri IPC</div>
+            <div class="arch-tier"><div class="node hl"><b>Rust agent runtime</b><span>plan → tool → execute → observe → re-plan</span></div><div class="node"><b>Ollama</b><span>local model (e.g. Qwen 2.5)</span></div></div>
+            <div class="arch-link">tool registry · risk tiers · approval gate</div>
+            <div class="arch-tier">
+              <div class="node"><b>Filesystem</b><span>sandboxed workspace</span></div>
+              <div class="node"><b>Terminal</b><span>allowlist · 120 s timeout</span></div>
+              <div class="node"><b>Browser</b><span>Playwright worker</span></div>
+              <div class="node"><b>Gmail</b><span>OAuth · PKCE</span></div>
+            </div>
+            <div class="arch-link">every turn persisted</div>
+            <div class="arch-tier"><div class="node"><b>SQLite</b><span>history · tool traces</span></div><div class="node"><b>OS keychain</b><span>tokens · secrets</span></div></div>
+          </figure>
+          <div class="kpis kpis-stack">
+            <div class="kpi"><strong>18</strong><span>defects found and fixed in a full security and correctness audit, from sandbox escapes to OAuth hardening</span></div>
+            <div class="kpi"><strong>~4,400</strong><span>lines of Rust and TypeScript across the agent, tools and UI</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- HEALTHCARE -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-teal">IoT + ML · 2026</span>
+          <h3>Smart Healthcare IoT System</h3>
+          <p class="tagline">A full-stack IoT health and emergency system: smart pill dispensers, wearable vitals, on-device TensorFlow anomaly detection and automatic SOS alerts, plus apps for doctors and patients.</p>
+          <div class="badges"><span class="badge">Sole builder</span><span class="badge">Hardware · ML · Web · Mobile</span><span class="badge">Working prototype</span></div>
+          <ul class="bullets">
+            <li><b>Automatic pill dispensers</b> on Arduino and ESP32, with optical verification gates that confirm a dose was actually taken.</li>
+            <li><b>Wearable monitoring</b>: heartbeat and pulse sensors stream vitals from an ESP32 node.</li>
+            <li>A <b>TensorFlow</b> classifier runs on the device, filtering heart-rate anomalies and predicting risk levels without a round trip to the cloud.</li>
+            <li>When something critical is detected, <b>Node.js functions</b> place a <b>Twilio voice call</b> and send a <b>WhatsApp SOS</b> that includes the patient's location.</li>
+            <li>A responsive <b>React doctor dashboard</b> for live vitals, and an <b>offline-first Flutter</b> patient app, both backed by Supabase.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>ESP32</li><li>Arduino</li><li>TensorFlow</li><li>Node.js</li><li>Twilio</li><li>React</li><li>Flutter</li><li>Supabase</li></ul>
+        </div>
+        <div class="gallery">
+          <figure class="arch" aria-label="Smart Healthcare IoT architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier"><div class="node"><b>Wearable sensors</b><span>heartbeat · pulse</span></div><div class="node"><b>Pill dispenser</b><span>optical verification gate</span></div></div>
+            <div class="arch-link">sensor readings</div>
+            <div class="arch-tier"><div class="node hl"><b>ESP32 edge node</b><span>filtering · on-device TensorFlow risk model</span></div></div>
+            <div class="arch-link">vitals, doses and anomalies</div>
+            <div class="arch-tier"><div class="node"><b>Supabase</b><span>vitals · dose log · patients</span></div><div class="node"><b>Node.js alert service</b><span>triggered on critical risk</span></div></div>
+            <div class="arch-link">real-time sync · emergency path</div>
+            <div class="arch-tier">
+              <div class="node"><b>React dashboard</b><span>for doctors</span></div>
+              <div class="node"><b>Flutter app</b><span>for patients · offline-first</span></div>
+              <div class="node"><b>Twilio</b><span>voice call · WhatsApp SOS + location</span></div>
+            </div>
+          </figure>
+        </div>
+      </article>
+
+      <!-- SIGN LANGUAGE GLOVE -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-teal">IoT + TinyML · Mar 2026</span>
+          <h3>Sign Language Recognition Glove</h3>
+          <p class="tagline">A gesture-controlled assistive glove that recognises sign-language letters on the microcontroller and speaks them aloud through a companion Flutter app.</p>
+          <div class="badges"><span class="badge"><b>A–Z</b> letters with spoken audio</span><span class="badge">USB + Wi-Fi</span><span class="badge">On-device inference</span></div>
+          <h4 class="mini-title">The glove</h4>
+          <ul class="bullets">
+            <li>Self-made <b>flex sensors</b> on a glove plus an <b>MPU6050 IMU</b> capture finger bends and hand tilt in real time.</li>
+            <li>Trained a <b>TinyML</b> gesture model in Edge Impulse and deployed on-device inference on a <b>Raspberry Pi Pico W</b>.</li>
+            <li>A lightweight real-time pipeline with low-pass filtering and window averaging keeps detection stable and avoids false triggers. Gestures can also drive actuators for hands-free control.</li>
+          </ul>
+          <h4 class="mini-title">Talking to the phone</h4>
+          <ul class="bullets">
+            <li>A <b>Python bridge script</b> reads the recognised gesture from the device and broadcasts it over a <b>WebSocket server</b> (port 8765).</li>
+            <li>The <b>Flutter companion app</b> listens on that socket, shows the detected letter and plays its spoken sound, with custom audio for all 26 letters.</li>
+            <li>It connects over <b>USB</b> (through <code>adb reverse</code>) first, <b>falls back to Wi-Fi</b> automatically if that fails, and reconnects on its own if the link drops.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>Embedded C</li><li>C++</li><li>Arduino</li><li>Pico W</li><li>MPU6050</li><li>Edge Impulse</li><li>TinyML</li><li>Python</li><li>WebSockets</li><li>Flutter</li></ul>
+        </div>
+        <div class="gallery">
+          <figure class="shot shot-wide" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/glove.jpg" alt="Sign language glove prototype wired to a microcontroller, with the companion app on a phone" loading="lazy" width="1200" height="742"></figure>
+          <figure class="arch" aria-label="Sign language glove architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier"><div class="node"><b>Flex sensors</b><span>finger bends</span></div><div class="node"><b>MPU6050</b><span>hand tilt · motion</span></div></div>
+            <div class="arch-link">filtered sensor windows</div>
+            <div class="arch-tier"><div class="node hl"><b>Pico W</b><span>Edge Impulse TinyML model</span></div></div>
+            <div class="arch-link">recognised gesture</div>
+            <div class="arch-tier"><div class="node"><b>Python bridge</b><span>WebSocket server · :8765</span></div></div>
+            <div class="arch-link">USB (adb reverse) or Wi-Fi</div>
+            <div class="arch-tier"><div class="node"><b>Flutter app</b><span>shows the letter · plays its audio</span></div></div>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="inventory">
+      <h2 class="section-title"><i data-icon="gem"></i> Inventory</h2>
+      <p class="section-sub">Tools I use regularly.</p>
+      <div class="inventory">
+        <div class="panel slot-group reveal">
+          <h3><i data-icon="scroll"></i> Languages</h3>
+          <ul class="slots"><li>Python</li><li>Kotlin</li><li>Dart</li><li>Java</li><li>C</li><li>C++</li><li>C#</li><li>Rust</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML / CSS</li></ul>
+        </div>
+        <div class="panel slot-group reveal">
+          <h3><i data-icon="potion"></i> Data &amp; ML</h3>
+          <ul class="slots"><li class="rare">Power BI</li><li>Data Analytics</li><li>Big Data</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>XGBoost</li><li>TensorFlow</li><li>Streamlit</li><li>NiceGUI</li></ul>
+        </div>
+        <div class="panel slot-group reveal">
+          <h3><i data-icon="star"></i> Mobile &amp; Desktop</h3>
+          <ul class="slots"><li>Jetpack Compose</li><li>Flutter</li><li>Hilt</li><li>Room</li><li>WorkManager</li><li>Riverpod</li><li>Hive</li><li>Tauri + Rust</li><li>PySide6</li></ul>
+        </div>
+        <div class="panel slot-group reveal">
+          <h3><i data-icon="key"></i> Web &amp; Backend</h3>
+          <ul class="slots"><li>React</li><li>Next.js</li><li>Tailwind</li><li>FastAPI</li><li>Flask</li><li>ASP.NET Core</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li><li>Supabase</li><li>Firebase</li><li>Node.js</li></ul>
+        </div>
+        <div class="panel slot-group reveal">
+          <h3><i data-icon="bolt"></i> Embedded &amp; IoT</h3>
+          <ul class="slots"><li>Arduino</li><li>Raspberry Pi Pico W</li><li>ESP32</li><li>MPU6050</li><li>Edge Impulse</li><li>TinyML</li><li>Microcontrollers</li></ul>
+        </div>
+        <div class="panel slot-group reveal">
+          <h3><i data-icon="chest"></i> Tooling</h3>
+          <ul class="slots"><li>Git</li><li>Docker</li><li>WebSockets</li><li>Ollama</li><li>Playwright</li><li>LiveKit</li><li>Twilio</li><li>Prometheus</li><li>Grafana</li><li>OAuth 2.0</li><li>Android Studio</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section class="section" id="trophies">
+      <h2 class="section-title"><i data-icon="star"></i> Trophies</h2>
+      <div class="trophies">
+        <div class="panel trophy reveal"><i data-icon="star" class="big"></i><strong>Top 50</strong><span>of 520+ teams, Smart India Hackathon internal round</span></div>
+        <div class="panel trophy reveal"><i data-icon="heart" class="big"></i><strong>88+</strong><span>members in the developer chapter I led</span></div>
+        <div class="panel trophy reveal"><i data-icon="gem" class="big"></i><strong>14k+</strong><span>students using KIITO</span></div>
+        <div class="panel trophy reveal"><i data-icon="potion" class="big"></i><strong>2k</strong><span>learners on Focus Fox, almost there</span></div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="save">
+      <div class="panel save reveal">
+        <canvas id="campfire" width="24" height="24" aria-hidden="true"></canvas>
+        <h2 class="section-title center">Save Point</h2>
+        <p>Want to save your progress? I'm open to internships, collaborations and interesting problems. The quickest way to reach me is by email.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:ryogisha1712@gmail.com"><span class="cursor">▶</span> ryogisha1712@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/yogisha-rani-1382a7381/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/LostRunes" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://drive.google.com/file/d/1wXWlwSEJjKpz5p-IoyhIjt4G_pKv9zJg/view?usp=drive_link" target="_blank" rel="noopener">Resume (PDF)</a>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>© 2026 Yogisha Rani · made by hand, one pixel at a time</p>
+        <p class="hint">tip: click the little traveller to say hi · arrow keys work too</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- ========== WALKER ========== -->
+  <div class="ground" id="ground" aria-hidden="true">
+    <canvas id="groundCanvas"></canvas>
+    <div class="walker" id="walker">
+      <div class="bubble" id="bubble"></div>
+      <canvas id="walkerCanvas" width="16" height="22"></canvas>
+    </div>
+    <div class="firefly" id="firefly"></div>
+  </div>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
