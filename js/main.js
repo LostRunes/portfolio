@@ -480,7 +480,7 @@
     hero: ["hi! scroll and i'll walk along", "the moon's nice tonight"],
     about: ["that's me! the real one", "ECS at KIIT, class of builders"],
     quests: ["IOCL had so much sensor data", "grape uav was my first web gig"],
-    adventures: ["KIITO has 14k+ users now!", "focus fox is almost at 2k", "bounceblitz vs neverbounce: a tie!", "my bot asks before it deletes", "the glove says letters out loud!", "where is my bus? check KIIT Transit", "click a screenshot to zoom"],
+    adventures: ["KIITO has 14k+ users now!", "focus fox is almost at 2k", "the artico is my fave design ✦", "bounceblitz vs neverbounce: a tie!", "my bot asks before it deletes", "the glove says letters out loud!", "where is my bus? check KIIT Transit", "click a screenshot to zoom"],
     inventory: ["power bi's in my bag too ✦", "so many chips…"],
     trophies: ["top 50 at SIH!", "88+ devs in the chapter"],
     save: ["don't forget to save :)", "say hi by email!"],
