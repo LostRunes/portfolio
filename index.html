@@ -373,118 +373,6 @@
         </div>
       </article>
 
-      <!-- THE ARTICO -->
-      <article class="panel project reveal">
-        <div class="project-main">
-          <span class="tag tag-gold">Web design · live</span>
-          <h3>The Artico</h3>
-          <p class="tagline">The storefront for The Artico, a brand selling premium custom laptop skins, cover tags and stickers. The design is dark, gold and teal, and lets the artwork be the star.</p>
-          <div class="badges"><span class="badge"><b>Live</b> at theartico.com</span><span class="badge">Next.js</span><span class="badge">Responsive · light / dark</span></div>
-          <ul class="bullets">
-            <li><b>Design direction:</b> a near-black canvas with gold and teal accents, a glowing gradient hero (<i>"Skin the Future. Your device. Reforged."</i>) and a tilted wall of skin artwork behind it.</li>
-            <li><b>Animated hero copy</b> that cycles through the devices a skin fits: laptops, trackpads and more.</li>
-            <li><b>Category carousels</b> for laptop skins, cover tags and stickers. Every card shows the design, its category and launch pricing, with a link to the details.</li>
-            <li>A <b>"Your Vision. Our Craft."</b> custom flow: customers upload their own artwork or describe an idea, then request a one-off skin.</li>
-            <li><b>Friction-free ordering</b> straight through the brand's Instagram and WhatsApp, plus a cart, sign-in, and a feedback form with star ratings.</li>
-            <li>Built with <b>Next.js</b>, with product images served through Cloudinary and Next.js image optimisation. Fully responsive, with a light/dark toggle.</li>
-          </ul>
-          <ul class="chips chips-tech"><li>Next.js</li><li>React</li><li>Cloudinary</li><li>UI / UX design</li><li>Responsive design</li><li>Light / dark themes</li></ul>
-          <div class="links">
-            <a class="btn btn-small" href="https://theartico.com" target="_blank" rel="noopener">Visit theartico.com ↗</a>
-          </div>
-        </div>
-        <div class="gallery">
-          <figure class="shot shot-wide" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_hero.jpg" alt="The Artico homepage hero: Skin the Future, with a wall of laptop skin artwork" loading="lazy" width="1252" height="655"></figure>
-          <div class="gallery-row">
-            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_products.jpg" alt="The Artico laptop skins carousel with product cards and pricing" loading="lazy" width="1200" height="750"></figure>
-            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_custom.jpg" alt="The Artico custom skin section: upload your design or describe your idea" loading="lazy" width="1200" height="750"></figure>
-          </div>
-          <div class="phones phones-sm">
-            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_mobile.jpg" alt="The Artico homepage on a phone" loading="lazy" width="412" height="892"></figure>
-          </div>
-        </div>
-      </article>
-
-      <!-- KIIT TRANSIT -->
-      <article class="panel project reveal">
-        <div class="project-main">
-          <span class="tag tag-teal">Mobile · Sep 2026</span>
-          <h3>KIIT Transit</h3>
-          <p class="tagline">Live tracking for KIIT's campus buses and EV carts. Drivers' phones broadcast GPS, and
-            students see every running vehicle on a campus map with ETAs, routes and schedules.</p>
-          <div class="badges"><span class="badge"><b>4 s</b> GPS broadcast interval</span><span class="badge"><b>11 /
-                11</b> tests · 0 analyzer issues</span><span class="badge">Student + driver apps</span></div>
-          <ul class="bullets">
-            <li><b>Student app:</b> a live campus map (flutter_map with MapTiler/OpenStreetMap tiles), animated markers
-              with heading arrows, EV/bus filters, ETAs, upcoming stops inferred from the vehicle's heading, route lines
-              with per-stop ETAs, and schedules marked on time, delayed or cancelled.</li>
-            <li><b>Driver app:</b> pick a vehicle, go on duty, and the phone broadcasts GPS every 4 seconds from an
-              <b>Android foreground service</b> that keeps working with the screen off.
-            </li>
-            <li><b>Crowd demand signals:</b> stranded students tap where they're waiting. A Supabase RPC merges requests
-              per location over 30 minutes, counts each student once and applies a 5-minute cooldown, so drivers see how
-              many people are actually waiting.</li>
-            <li><b>Security in the database, not just the app:</b> Row-Level Security policies mean a driver can claim
-              only a vehicle nobody else is driving and update only their own, and a server-side trigger rejects any
-              email outside <code>@kiit.ac.in</code>.</li>
-            <li><b>MVVM with repositories</b> over a swappable data source (Supabase or a built-in simulator), so the
-              whole app also runs as a realistic demo with no backend.</li>
-          </ul>
-          <ul class="chips chips-tech">
-            <li>Flutter</li>
-            <li>Supabase Realtime</li>
-            <li>PostgreSQL + RLS</li>
-            <li>flutter_map</li>
-            <li>Geolocator</li>
-            <li>Provider</li>
-            <li>GoRouter</li>
-            <li>MVVM</li>
-          </ul>
-        </div>
-        <div class="gallery">
-          <div class="phones">
-            <figure class="shot phone" data-lightbox><img
-                src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kt_map.jpg"
-                alt="KIIT Transit live map showing buses and EV carts on campus routes" loading="lazy" width="412"
-                height="892"></figure>
-            <figure class="shot phone" data-lightbox><img
-                src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kt_request.jpg"
-                alt="KIIT Transit ride request screen with campus pickup locations" loading="lazy" width="412"
-                height="892"></figure>
-          </div>
-          <div class="design-row" aria-label="Figma design">
-            <h4 class="mini-title">Figma design</h4>
-            <div class="phones phones-sm">
-              <figure class="shot phone name-blur"><img src="img/kt_design_home.png"
-                  alt="KIIT Transit Figma design: home with nearest vehicle ETA" loading="lazy"
-                  onerror="this.closest('figure').remove()"></figure>
-              <figure class="shot phone" data-lightbox><img src="img/kt_design_map.png"
-                  alt="KIIT Transit Figma design: live map with vehicle ETAs" loading="lazy"
-                  onerror="this.closest('figure').remove()"></figure>
-              <figure class="shot phone" data-lightbox><img src="img/kt_design_driver.png"
-                  alt="KIIT Transit Figma design: driver app with shift status and assigned route" loading="lazy"
-                  onerror="this.closest('figure').remove()"></figure>
-            </div>
-          </div>
-          <figure class="arch" aria-label="KIIT Transit architecture">
-            <figcaption class="arch-title">Architecture</figcaption>
-            <div class="arch-tier">
-              <div class="node"><b>Driver app</b><span>Geolocator · foreground service</span></div>
-            </div>
-            <div class="arch-link">GPS every 4 s · demand signals</div>
-            <div class="arch-tier">
-              <div class="node hl"><b>Supabase</b><span>Postgres + RLS · Realtime · demand RPC · domain trigger</span>
-              </div>
-            </div>
-            <div class="arch-link">realtime vehicles, requests, schedules</div>
-            <div class="arch-tier">
-              <div class="node"><b>Student app</b><span>Views → ViewModels → Repositories</span></div>
-              <div class="node"><b>TransitSource</b><span>Supabase or simulator</span></div>
-            </div>
-          </figure>
-        </div>
-      </article>
-
       <!-- BOUNCEBLITZ -->
       <article class="panel project reveal">
         <div class="project-main">
@@ -890,6 +778,118 @@
               <div class="node"><b>Flutter app</b><span>shows the letter · plays its audio</span></div>
             </div>
           </figure>
+        </div>
+      </article>
+
+      <!-- KIIT TRANSIT -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-teal">Mobile · Sep 2026</span>
+          <h3>KIIT Transit</h3>
+          <p class="tagline">Live tracking for KIIT's campus buses and EV carts. Drivers' phones broadcast GPS, and
+            students see every running vehicle on a campus map with ETAs, routes and schedules.</p>
+          <div class="badges"><span class="badge"><b>4 s</b> GPS broadcast interval</span><span class="badge"><b>11 /
+                11</b> tests · 0 analyzer issues</span><span class="badge">Student + driver apps</span></div>
+          <ul class="bullets">
+            <li><b>Student app:</b> a live campus map (flutter_map with MapTiler/OpenStreetMap tiles), animated markers
+              with heading arrows, EV/bus filters, ETAs, upcoming stops inferred from the vehicle's heading, route lines
+              with per-stop ETAs, and schedules marked on time, delayed or cancelled.</li>
+            <li><b>Driver app:</b> pick a vehicle, go on duty, and the phone broadcasts GPS every 4 seconds from an
+              <b>Android foreground service</b> that keeps working with the screen off.
+            </li>
+            <li><b>Crowd demand signals:</b> stranded students tap where they're waiting. A Supabase RPC merges requests
+              per location over 30 minutes, counts each student once and applies a 5-minute cooldown, so drivers see how
+              many people are actually waiting.</li>
+            <li><b>Security in the database, not just the app:</b> Row-Level Security policies mean a driver can claim
+              only a vehicle nobody else is driving and update only their own, and a server-side trigger rejects any
+              email outside <code>@kiit.ac.in</code>.</li>
+            <li><b>MVVM with repositories</b> over a swappable data source (Supabase or a built-in simulator), so the
+              whole app also runs as a realistic demo with no backend.</li>
+          </ul>
+          <ul class="chips chips-tech">
+            <li>Flutter</li>
+            <li>Supabase Realtime</li>
+            <li>PostgreSQL + RLS</li>
+            <li>flutter_map</li>
+            <li>Geolocator</li>
+            <li>Provider</li>
+            <li>GoRouter</li>
+            <li>MVVM</li>
+          </ul>
+        </div>
+        <div class="gallery">
+          <div class="phones">
+            <figure class="shot phone" data-lightbox><img
+                src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kt_map.jpg"
+                alt="KIIT Transit live map showing buses and EV carts on campus routes" loading="lazy" width="412"
+                height="892"></figure>
+            <figure class="shot phone" data-lightbox><img
+                src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/kt_request.jpg"
+                alt="KIIT Transit ride request screen with campus pickup locations" loading="lazy" width="412"
+                height="892"></figure>
+          </div>
+          <div class="design-row" aria-label="Figma design">
+            <h4 class="mini-title">Figma design</h4>
+            <div class="phones phones-sm">
+              <figure class="shot phone name-blur"><img src="img/kt_design_home.png"
+                  alt="KIIT Transit Figma design: home with nearest vehicle ETA" loading="lazy"
+                  onerror="this.closest('figure').remove()"></figure>
+              <figure class="shot phone" data-lightbox><img src="img/kt_design_map.png"
+                  alt="KIIT Transit Figma design: live map with vehicle ETAs" loading="lazy"
+                  onerror="this.closest('figure').remove()"></figure>
+              <figure class="shot phone" data-lightbox><img src="img/kt_design_driver.png"
+                  alt="KIIT Transit Figma design: driver app with shift status and assigned route" loading="lazy"
+                  onerror="this.closest('figure').remove()"></figure>
+            </div>
+          </div>
+          <figure class="arch" aria-label="KIIT Transit architecture">
+            <figcaption class="arch-title">Architecture</figcaption>
+            <div class="arch-tier">
+              <div class="node"><b>Driver app</b><span>Geolocator · foreground service</span></div>
+            </div>
+            <div class="arch-link">GPS every 4 s · demand signals</div>
+            <div class="arch-tier">
+              <div class="node hl"><b>Supabase</b><span>Postgres + RLS · Realtime · demand RPC · domain trigger</span>
+              </div>
+            </div>
+            <div class="arch-link">realtime vehicles, requests, schedules</div>
+            <div class="arch-tier">
+              <div class="node"><b>Student app</b><span>Views → ViewModels → Repositories</span></div>
+              <div class="node"><b>TransitSource</b><span>Supabase or simulator</span></div>
+            </div>
+          </figure>
+        </div>
+      </article>
+
+      <!-- THE ARTICO -->
+      <article class="panel project reveal">
+        <div class="project-main">
+          <span class="tag tag-gold">Web design · live</span>
+          <h3>The Artico</h3>
+          <p class="tagline">The storefront for The Artico, a brand selling premium custom laptop skins, cover tags and stickers. The design is dark, gold and teal, and lets the artwork be the star.</p>
+          <div class="badges"><span class="badge"><b>Live</b> at theartico.com</span><span class="badge">Next.js</span><span class="badge">Responsive · light / dark</span></div>
+          <ul class="bullets">
+            <li><b>Design direction:</b> a near-black canvas with gold and teal accents, a glowing gradient hero (<i>"Skin the Future. Your device. Reforged."</i>) and a tilted wall of skin artwork behind it.</li>
+            <li><b>Animated hero copy</b> that cycles through the devices a skin fits: laptops, trackpads and more.</li>
+            <li><b>Category carousels</b> for laptop skins, cover tags and stickers. Every card shows the design, its category and launch pricing, with a link to the details.</li>
+            <li>A <b>"Your Vision. Our Craft."</b> custom flow: customers upload their own artwork or describe an idea, then request a one-off skin.</li>
+            <li><b>Friction-free ordering</b> straight through the brand's Instagram and WhatsApp, plus a cart, sign-in, and a feedback form with star ratings.</li>
+            <li>Built with <b>Next.js</b>, with product images served through Cloudinary and Next.js image optimisation. Fully responsive, with a light/dark toggle.</li>
+          </ul>
+          <ul class="chips chips-tech"><li>Next.js</li><li>React</li><li>Cloudinary</li><li>UI / UX design</li><li>Responsive design</li><li>Light / dark themes</li></ul>
+          <div class="links">
+            <a class="btn btn-small" href="https://theartico.com" target="_blank" rel="noopener">Visit theartico.com ↗</a>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="shot shot-wide" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_hero.jpg" alt="The Artico homepage hero: Skin the Future, with a wall of laptop skin artwork" loading="lazy" width="1252" height="655"></figure>
+          <div class="gallery-row">
+            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_products.jpg" alt="The Artico laptop skins carousel with product cards and pricing" loading="lazy" width="1200" height="750"></figure>
+            <figure class="shot" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_custom.jpg" alt="The Artico custom skin section: upload your design or describe your idea" loading="lazy" width="1200" height="750"></figure>
+          </div>
+          <div class="phones phones-sm">
+            <figure class="shot phone" data-lightbox><img src="https://ik.imagekit.io/hiesc7f4v/yogisha-portfolio/artico_mobile.jpg" alt="The Artico homepage on a phone" loading="lazy" width="412" height="892"></figure>
+          </div>
         </div>
       </article>
     </section>
